@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissosrs</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="keys">
+      <button onclick="playGame('ROCK')">
+        <img src="assets/img/rock.png" alt="" />
+      </button>
+      <button onclick="playGame('PAPER')">
+        <img src="assets/img/paper.png" alt="" />
+      </button>
+      <button onclick="playGame('SCISSORS')">
+        <img src="assets/img/scissors.png" alt="" />
+      </button>
+    </div>
+
+    <div class="displayText" id="display"></div>
+    <div class="resultText" id="resultDisplay"></div>
+    <div onclick="clear()" value="reset" class="refresh" id="refresh"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

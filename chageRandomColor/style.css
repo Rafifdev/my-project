@@ -1,0 +1,39 @@
+*, body {
+  font-family: Arial, Helvetica, sans-serifs;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+button {
+  height: 50px;
+  width: 20rem;
+  font-size: 25px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  background-color: wheat;
+  color: black;
+  cursor: pointer;
+}

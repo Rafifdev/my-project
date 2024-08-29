@@ -1,0 +1,76 @@
+body {
+  font-family: popy;
+  background-color: #1496BB;
+}
+
+img {
+  height: 19rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+img:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  animation: jump 0.85s ease infinite;
+}
+
+button:hover {
+  animation: none;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the height of the jump */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 60vh;
+}
+
+.displayText {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  cursor: default;
+}
+
+.resultText {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  cursor: default;
+}
+
+.refresh {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
