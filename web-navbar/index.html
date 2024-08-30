@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoapipp</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Yoapipp</a>
+    <nav class="navbar">
+      <a href="#" class="nav-item">Home</a>
+      <a href="#" class="nav-item">About</a>
+      <a href="#" class="nav-item">Gallery</a>
+      <a href="#" class="nav-item">Projects</a>
+      <a href="#" class="nav-item">Contact</a>
+    </nav>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="dropdown_menu">
+      <a href="#" class="nav-item">Home</a>
+      <a href="#" class="nav-item">About</a>
+      <a href="#" class="nav-item">Gallery</a>
+      <a href="#" class="nav-item">Projects</a>
+      <a href="#" class="nav-item">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <p class="welcome">Welcome</p>
+      <span>to</span>
+      <blockquote>Yoapipp</blockquote>
+    </section>
+  </main>
+
+  <div class="sword"></div>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = () => {
+      const isOpen = dropDownMenu.classList.toggle('open');
+      toggleBtnIcon.classList.toggle('fa-bars', !isOpen);
+      toggleBtnIcon.classList.toggle('fa-xmark', isOpen);
+    }
+  </script>
+</body>
+</html>
